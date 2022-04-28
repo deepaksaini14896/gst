@@ -34,8 +34,8 @@ class Tax_Payer(models.Model):
 
 class Tax(models.Model):
 	payer = models.ForeignKey(Tax_Payer, on_delete = models.CASCADE)
-	sgst = models.CharField(max_length = 10)
-	cgst = models.CharField(max_length = 10)
+	sgst = models.CharField(max_length = 10, null = True)
+	cgst = models.CharField(max_length = 10, null = True)
 	ugst = models.CharField(max_length = 10, null = True)
 	arrears = models.CharField(max_length = 10, null = True)
 	fines = models.CharField(max_length = 10, null = True)
