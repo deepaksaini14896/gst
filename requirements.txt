@@ -2,3 +2,4 @@ django
 djangorestframework
 pyjwt
 bcrypt
+psycopg2-binary
